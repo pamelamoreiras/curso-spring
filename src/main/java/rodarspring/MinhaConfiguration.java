@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Bean;
 @Development
 public class MinhaConfiguration {
 
+
     @Bean // código que executa quando a aplicação inicializa
     public CommandLineRunner executar() {
         return args -> {
