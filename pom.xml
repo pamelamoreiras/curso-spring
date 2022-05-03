@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teste:project xmlns:teste="http://maven.apache.org/POM/4.0.0"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <teste:modelVersion>4.0.0</teste:modelVersion>
+
+    <teste:groupId>org.example</teste:groupId>
+    <teste:artifactId>spring_avancado</teste:artifactId>
+    <teste:version>1.0-SNAPSHOT</teste:version>
+
+    <teste:properties>
+        <teste:maven.compiler.source>11</teste:maven.compiler.source>
+        <teste:maven.compiler.target>11</teste:maven.compiler.target>
+    </teste:properties>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-parent -->
+    <teste:parent>
+        <teste:groupId>org.springframework.boot</teste:groupId>
+        <teste:artifactId>spring-boot-starter-parent</teste:artifactId>
+        <teste:version>2.6.7</teste:version>
+    </teste:parent>
+
+
+
+    <teste:dependencies>
+        <teste:dependency>
+            <teste:groupId>org.springframework.boot</teste:groupId>
+            <teste:artifactId>spring-boot-starter</teste:artifactId>
+        </teste:dependency>
+
+        <!-- starter web -->
+        <teste:dependency>
+            <teste:groupId>org.springframework</teste:groupId>
+            <teste:artifactId>spring-web</teste:artifactId>
+            <teste:version>5.3.18</teste:version>
+        </teste:dependency>
+
+        <!-- starter web -->
+        <teste:dependency>
+            <teste:groupId>org.springframework.data</teste:groupId>
+            <teste:artifactId>spring-data-jpa</teste:artifactId>
+            <teste:version>2.6.3</teste:version>
+        </teste:dependency>
+
+        <teste:dependency>
+            <teste:groupId>com.h2database</teste:groupId>
+            <teste:artifactId>h2</teste:artifactId>
+        </teste:dependency>
+
+        <teste:dependency>
+            <teste:groupId>org.springframework.security</teste:groupId>
+            <teste:artifactId>spring-security-bom</teste:artifactId>
+        </teste:dependency>
+
+        <teste:dependency>
+            <teste:groupId>org.springframework.boot</teste:groupId>
+            <teste:artifactId>spring-boot-starter-test</teste:artifactId>
+        </teste:dependency>
+
+
+    </teste:dependencies>
+
+    <teste:build>
+        <teste:plugins>
+            <teste:plugin>
+                <teste:groupId>org.springframework.boot</teste:groupId>
+                <teste:artifactId>spring-boot-maven-plugin</teste:artifactId>
+            </teste:plugin>
+        </teste:plugins>
+    </teste:build>
+
+</teste:project>
